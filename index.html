@@ -112,7 +112,7 @@
 
       //Ejercicio 9 Estructura repetitiva (while)//
 
-     /* let x;
+      /* let x;
 
       let valor=11;
       x=1;
@@ -128,12 +128,206 @@
 
 
 
-        //Ejercicio 10 Estructura repetitiva (for)//
+      //Ejercicio 10 Estructura repetitiva (for)//
 
-       // for (let f=1; f<=10;);
-        
+      // Función para calcular la superficie de un triángulo
+
+      /*
+      function superficie(base, altura) {
+        return (base * altura) / 2;
+      }
+
+      // Arreglo para almacenar los datos de los triángulos
+      let triangulos = [];
+
+      // Variable para contar los triángulos con superficie mayor a 12
+      let contador = 0;
+
+      // Bucle para leer los datos de los triángulos
+      for (let i = 0; i < 3; i++) {
+        // Leer la base y la altura del triángulo i
+        let base = prompt("Ingrese la base del triángulo " + (i + 1));
+        let altura = prompt("Ingrese la altura del triángulo " + (i + 1));
+
+        // Convertir los datos a números
+        base = Number(base);
+        altura = Number(altura);
+
+        // Calcular la superficie del triángulo i
+        let superf = superficie(base, altura);
+
+        // Almacenar los datos del triángulo i en el arreglo
+        triangulos[i] = {
+          base: base,
+          altura: altura,
+          superficie: superf,
+        };
+
+        // Verificar si la superficie es mayor a 12 y aumentar el contador si es así
+        if (superf > 12) {
+          contador++;
+        }
+      }
+
+      // Mostrar los resultados por consola
+      console.log("Los datos de los triángulos son:");
+      
+      for (let i = 0; i < triangulos.length; i++) {
+        console.log(" Triángulo  " + (i + 1) + " : base = " + triangulos[i].base + ", altura =  " +  triangulos[i].altura + " , superficie = " + 
+            triangulos[i].superficie) 
+      }
+      console.log(
+        "La cantidad de triángulos con superficie mayor a 12 es: " + contador
+      );
+      */
+
+      /*------------------------------------------------------------------------------------------------------------------*/
+
+
+
+      //Estructura repetitiva (for)- Tabla del 5
+      /*
+      let base = 5;
+
+      let limite = 50;
+
+      for (let i = 1; i <= limite / base; i++) {
+        // Calcular el producto del número base y el índice del bucle
+        let producto = base * i;
+
+        // Mostrar el resultado en la consola
+        console.log(base + " x " + i + " = " + producto);
+      }
+
+      */
+
+      //Estructura repetitiva (for)- Función para calcular la superficie de un triángulo 2.0//
+      /*
+      let cantidad = 0;
+
+      for (let i = 0 ; i<=3 ; i++){
+        let base =parseInt(prompt("Ingrese la base "+ i + ":"))
+        let altura =parseInt(prompt("Ingrese la altura "+ i + ":"))
+
+        superficie=base*altura;
+        if (superficie>=12 ){
+          cantidad ++;
+        }
+      }
+        document.write("La cantidad de triangulos con area mayor a 12 es " + cantidad);
+
+      */
+
+      //Funciones-- Con Parametros-- Falta terminar!!!
+      /*
+       function mayorEntero (num1,num2,num3 ){
+        let menor= Math.min(num1,num2,num3)
+        return mayor;
+      }
+      for (let i= 0 ; i >= 3 ; i++ ){
+        window ["num"] = parseInt(prompt("Ingrese un numero entero "))
+      }
+
+      */
+
 
 
     </script>
+
+      <!--Ejercicio Checkbox-->
+      
+      <!--
+      <form action="">
+        <input type="checkbox" id="futbol">Futbol
+        <input type="checkbox" id="basket">Basket
+        <input type="checkbox" id="tenis">Tenis
+        <input type="button" value="Resultado" onclick="verResultado()">
+
+      </form>
+      <script>
+        
+        function verResultado(){
+          let cant = 0;
+          if (document.getElementById('futbol').checked) {
+            alert('Eligio Fulbo');
+          }
+          if (document.getElementById('basket').checked) {
+            alert('Eligio basket');}
+          if (document.getElementById('tenis').checked) {
+            alert('Eligio tenis');}
+          
+           } 
+           
+          -->  
+
+        <!--Ejercicio TexArea-->
+
+
+
+
+        <!---Ejercicio Onfocus-->
+          <!--
+
+          
+        <form action="">
+          <input type="text" name="nombre" onblur="vaciar(this)" value=""><br>
+          <input type="password" name="contraseña" onblur="vaciar(this)" value="">
+          <input type="button" value="Confirmar" >
+
+        </form>
+        <script>
+          function vaciar(elemento){
+            if(elemento.value.length < 7){
+              alert('La contraseña es muy corta');
+            }
+            if(elemento.value.length > 20){
+              alert('La contraseña es muy larga');
+            }
+      }
+        </script>
+
+
+      </script>
+
+      -->
+    
+      <!--Ejercicio onMouseOver-->
+      <!--
+
+      
+      <table border ="1">
+        <tr>
+          <td onMouseOver="pintar(this,'#f00')" onMouseOut="pintar(this,'#fff')"><a
+              href="http://outlook.com">Outlook</a></td>
+          <td onMouseOver="pintar(this,'#0f0')" onMouseOut="pintar(this,'#fff')"><a href="http://gmail.com">Gmail</a>
+          </td>
+          <td onMouseOver="pintar(this,'#00f')" onMouseOut="pintar(this,'#fff')"><a href="http://yahoo.com">Yahoo</a>
+          </td>
+        </tr>
+      </table>
+    
+      <script>
+        function pintar(objeto, col) {
+          objeto.style.backgroundColor = col;
+        }
+      </script>
+
+      -->
+
+      <!--Ejercicio onLoad-->
+
+      <body onload="mostrarMensaje()">
+
+  
+
+        <script>
+          function mostrarMensaje() {
+            alert('Mensaje');
+          }
+        </script>
+
+
+
+
   </body>
 </html>
